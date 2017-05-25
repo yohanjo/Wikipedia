@@ -24,8 +24,8 @@ import cc.mallet.types.Alphabet;
 import cc.mallet.types.IDSorter;
 import cc.mallet.types.Instance;
 import cc.mallet.types.InstanceList;
-import util.DoubleMatrix;
 import util.io.PrintFileWriter;
+import util.matrix.DoubleMatrix;
 
 
 public class RunLDAMallet {
@@ -62,7 +62,7 @@ public class RunLDAMallet {
 		@Parameter(names = "-o", description = "Output directory.")
 		public String outDir = null;
 
-		@Parameter(names = "-data", description = "Data file name prefix.", required=true)
+		@Parameter(names = "-data", description = "Data file name.", required=true)
 		public String dataFileName = null;
 		
 		@Parameter(names = "-sw", description = "Stopwords file name.")
